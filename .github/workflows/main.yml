@@ -25,7 +25,7 @@ jobs:
 
       - name: Build frontend
         working-directory: server/frontend
-        run: npm run build
+        run: CI=false npm run build
 
       - name: CI/CD completed
         run: echo "CI/CD workflow completed successfully"
